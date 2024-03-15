@@ -12,9 +12,9 @@ namespace OfficeOpenXml.Utils
             get
             {
                 var recyclableMemoryStream = recyclableMemoryStreamManager.Value;
-                recyclableMemoryStream.MaximumFreeSmallPoolBytes = 64 * 1024 * 1024;
-                recyclableMemoryStream.MaximumFreeLargePoolBytes = 64 * 1024 * 32;
-                recyclableMemoryStream.AggressiveBufferReturn = true;
+                //recyclableMemoryStream.MaximumFreeSmallPoolBytes = 64 * 1024 * 1024;
+                //recyclableMemoryStream.MaximumFreeLargePoolBytes = 64 * 1024 * 32;
+                //recyclableMemoryStream.AggressiveBufferReturn = true;
                 return recyclableMemoryStream;
             }
         }
